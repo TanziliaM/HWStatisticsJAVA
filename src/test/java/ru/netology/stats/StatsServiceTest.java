@@ -30,12 +30,11 @@ public class StatsServiceTest {
     void findMonthWithMaxSales() {
         StatsService service = new StatsService();
         int[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-        int expected = 6;
-        int expected2 = 8;
+        int expected = 8;
 
         int actual = service.maxSales(sales);
 
-        assertEquals(expected, expected2, actual);
+        assertEquals(expected, actual);
 
     }
 
